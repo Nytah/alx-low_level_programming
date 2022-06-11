@@ -7,10 +7,9 @@
 void print_square(int size)
 {
 int i;
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
 {
-printf("#");
+putchar("#");
 }
 printf("\n");
 }
-
