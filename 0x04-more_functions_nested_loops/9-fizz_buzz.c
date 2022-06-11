@@ -1,32 +1,32 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - main block, solve fizz buzz from numbers 1 to 100
- * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
- * Multiples of both 3 and 5 should print FizzBuzz.
- * Return: 0
+ * main - take the fizz-buzz challenge
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int i;
+	int n;
 
-	i = 1;
-	while (i <= 100)
+	for (n = 1; n < 101; n++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (n % 5 == 0 && n % 3 == 0)
 			printf("FizzBuzz ");
-		else if (i % 3 == 0)
+		else if (n % 5 == 0)
+			if (n == 100)
+				printf("Buzz");
+			else
+				printf("Buzz ");
+		else if (n % 3 == 0)
 			printf("Fizz ");
-		else if (i % 5 == 0)
-			printf("Buzz ");
 		else
-			printf("%d ", i);
-
-		i++;
+			printf("%d ", n);
 	}
 	printf("\n");
 
 	return (0);
 }
-
 
