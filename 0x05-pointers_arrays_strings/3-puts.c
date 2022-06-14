@@ -8,10 +8,9 @@
 
 void _puts(char *str)
 {
-int i = 0;
+char *str;
 
-while (str[i] != '\0')
-{
-_puts(str[i]);
-i++;
+str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+_puts(str);
+return (0);
 }
