@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -13,7 +12,7 @@ int i = 0;
 
 while (str[i] != '\0')
 {
-_puts(str[i]);
+_putchar(str[i]);
 i++;
 }
 
