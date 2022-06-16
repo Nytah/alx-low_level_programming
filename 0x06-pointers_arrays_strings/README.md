@@ -11,3 +11,4 @@
 * 101-print_number.c: function that prints an integer
 * 102-magic.c: Add one line to this [code](this code), so that the program prints a[2] = 98, followed by a new line
 * 103-infinite_add.c: function that adds two numbers
+*104-print_buffer.c: function that prints a buffer
