@@ -1,20 +1,21 @@
-#include " main.h"
-
+#include "main.h"
 /**
- * print_chessboard - prints the chessboard
- * @a: chessboard
- * Return: void
+ *
+ *
+ * print_chessboard - print in the terminal the chessboard
+ * @a: The character to print
+ *
  */
+void print_chessboard(char(*a)[8])
+{
+int b;
+int c;
 
-void print_chessboard(char (*a)[8])
+for (b = 0; b < 8; b++)
 {
-int i, j;
-
-for (i = 0; i < 8; i++)
+for (c = 0; c < 8; c++)
 {
-for (j = 0; j < 8; j++)
-{
-_putchar(a[i][j]);
+_putchar(a[b][c]);
 }
 _putchar('\n');
 }
