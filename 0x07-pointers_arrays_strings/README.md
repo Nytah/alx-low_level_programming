@@ -7,3 +7,4 @@
 * 5-strstr.c: function that locates a substring
 * 7-print_chessboard.c: function that prints the chessboard
 * 8-print_diagsums.c: function that prints the sum of the two diagonals
+* 100-set_string.c: function that sets the value of a pointer to a char
