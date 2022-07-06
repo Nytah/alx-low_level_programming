@@ -1,18 +1,22 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - maps an array through a func pointer
- * @array: the int array
- * @size: the array size
- * @action: function pointer
+ * array_iterator - executes a func given as a param on each element of array
+ * @array: array to execute func on
+ * @size: size of array
+ * @action: pointer to the func to use
  *
  * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int *end = array + size - 1;
+	size_t i;
 
-if (array && size && action)
-while (array <= end)
-action(*array++);
+	if (array && action)
+	{
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
+	}
 }
